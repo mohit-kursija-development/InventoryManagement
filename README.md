@@ -1,5 +1,9 @@
 # InventoryManagement
-Inventory Management project using Ruby on Rails
+Inventory Management project using Ruby on Rails.
+- CRUD Implementation in Rails with SQLite as Database.
+- Responsive Website using Bootstrap.
+- Leveraged scaffold in Rails.
+
 **Home Page Snip**
 ![image](https://github.com/mohit-kursija-development/inventory.github.io/assets/143956988/9f6636a3-78d2-48cd-94f5-fd34ed695359)
 
