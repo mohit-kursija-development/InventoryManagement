@@ -1,0 +1,24 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>List of Items</h1>
+<%= link_to "New inventory item", new_inventory_item_path, class:"btn btn-success mb-3" %>
+
+<div id="inventory_items">
+<div class="container">
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+  <% @inventory_items.each do |item| %>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100 border">
+        <div class="card-body">
+          <h5 class="card-title"><%= link_to item.name, inventory_item_path(item) %></h5>
+          <p class="card-text"><%= item.description %></p>
+          <p class="card-text">Quantity: <%= item.quantity %></p>
+          <p class="card-text">Price: <%= item.price %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+</div>
+
